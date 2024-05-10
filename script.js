@@ -1,4 +1,6 @@
 const canvas = document.getElementById("myCanvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
 
@@ -138,3 +140,17 @@ ctx.fillRect(20, 20, 280, 130);
 // y1	Required.The y - coordinate of the end circle
 // r1	Required.The radius of the end circle
 // const grad=ctx.createRadialGradient(150,75,15,150,75,150);
+
+// fillText() method is used to draw "filled" text
+// text	Required. The text-string to be drawn
+// x	Required.The x - coordinate of the start of the string
+// y	Required.The y - coordinate of the start of the string
+// maxwidth	Optional.The maximum width of the text - string
+
+// ctx.font = "bold italic 50px Arial";
+ctx.font = "50px Arial";
+ctx.fillStyle = "purple";
+// ctx.strokeStyle = "purple";
+ctx.fillText("Apple World", 140, 350);
+
+// strokeText() method is used to draw "outlined" text
